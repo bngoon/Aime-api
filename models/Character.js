@@ -9,6 +9,7 @@ let characterSchema = new Schema (
         "birthdate": {type: String},
         "sex": {type: String},
         "status": {type: String},
+        "jutsu": [String]
     }
 )
 
