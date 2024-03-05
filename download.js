@@ -8,5 +8,5 @@ const headers = {
 
 fetch(url, { headers })
     .then(response => response.json())
-    .then(data => fsPromises.writeFile("./data.json", JSON.stringify(data)))
+    .then(data => fsPromises.writeFile("./data.json", JSON.stringify(data.characters)))
     .catch(error => console.error(error));
