@@ -10,7 +10,7 @@ const insertData = async () => {
     await Character.create(charactersData)
    
     
-    console.log(chalk.greenBright("Characters Created!"));
+    console.log(chalk.greenBright("Naruto Characters Created!"));
     
     await db.close();
     
