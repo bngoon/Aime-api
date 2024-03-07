@@ -35,7 +35,7 @@ Install dependencies.
 #### Get characters by  Id
 
 ```http
-  GET /api/characters/${id}
+  GET localhost4002/api/characters/${id}
 ```
 
 | Parameter | Type     | Description                       |
@@ -45,7 +45,7 @@ Install dependencies.
 #### Get characters by  Name
 
 ```http
-  GET /api/characters/name/Zero-Tails
+  GET localhost4002/api/characters/name/Zero-Tails
 ```
 
 | Parameter | Type     | Description                       |
