@@ -66,3 +66,21 @@ export const getCharacter = async (req, res) => {
        res.status(500).json({error: error.message});
   }
   }
+
+  export const getCharacterByName = async (req, res) => {
+    try {
+        const { name } = req.params;
+        const character = await Character.findOne({ name });
+
+        if (character) {
+            return res.json(character);
+        }
+
+        res.status(404).json({ message: "Character not found!" });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: error.message });
+    }
+};
+
+
